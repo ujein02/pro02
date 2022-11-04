@@ -20,6 +20,12 @@ commit;
 
 select * from notice order by notiNo desc;
 
+select * from custom;
+update custom set level=9 where cusid="admin";
+
+
+
+
 
 
 

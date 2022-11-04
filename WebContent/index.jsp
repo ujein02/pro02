@@ -11,7 +11,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="common.css">
 <style>
-
+.in_container { clear:both; width:1400px; margin:0 auto; }
+.in_container:after { content:""; display:block; clear:both; }
 </style>
 </head>
 <body>
@@ -21,7 +22,7 @@
 <ul class="row" id="best">
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -31,7 +32,7 @@
 	</li>
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -41,7 +42,7 @@
 	</li>
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -51,7 +52,7 @@
 	</li>
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -61,7 +62,7 @@
 	</li>
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -71,7 +72,7 @@
 	</li>
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,7 +82,7 @@
 	</li>
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -91,7 +92,7 @@
 	</li>
 	<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
 		<div class="card" style="width: 18rem;">
-		  <img src="./img/scool_logo.jpg" class="card-img-top" alt="더미이미지">
+		  <img src="./img/dummy.png" class="card-img-top" alt="더미이미지">
 		  <div class="card-body">
 		    <h5 class="card-title">Card title</h5>
 		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

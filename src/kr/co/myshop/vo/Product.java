@@ -6,7 +6,10 @@ public class Product {
 	private String proName;
 	private String proSpec;
 	private int proPrice;
-	private String priPic;
+	private int oriPrice;
+	private double discountRate;
+	private String proPic;
+	private String propic2;
 	
 	public int getProNo() {
 		return proNo;
@@ -39,11 +42,31 @@ public class Product {
 		this.proPrice = proPrice;
 	}
 	public String getPriPic() {
-		return priPic;
+		return proPic;
 	}
 	public void setPriPic(String priPic) {
-		this.priPic = priPic;
+		this.proPic = priPic;
 	}
+	public int getOriPrice() {
+		return oriPrice;
+	}
+	public void setOriPrice(int oriPrice) {
+		this.oriPrice = oriPrice;
+	}
+	public double getDiscountRate() {
+		return discountRate;
+	}
+	public void setDiscountRate(double discountRate) {
+		this.discountRate = discountRate;
+	}
+	public String getPropic2() {
+		return propic2;
+	}
+	public void setPropic2(String propic2) {
+		this.propic2 = propic2;
+	}
+	
+	
 	
 	
 

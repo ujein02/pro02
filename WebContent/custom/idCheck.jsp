@@ -1,27 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*, java.util.*, kr.co.myshop.vo.*"%>
+<%
+		String cusId = request.getParameter("cusId");
+		if(cusId==null || cusId=="") cusId="";
+%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>로그인</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-latest.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-.title { padding-top:36px; padding-bottom:20px; }
-</style>
+
+<title>아이디 중복 확인</title>
+
 </head>
 <body>
-<%@ include file="../header.jsp" %>
-<%
-	Notice vo = (Notice) request.getAttribute("notice");
-%>
+
 <div class="content container">
 	<h2 class="title">아이디 중복 확인</h2>
-	<form name="frm1" action="../IdCheckProCtrl" method="post" id="" class="frm1" onsubmit="return invalidCheck(this)">
+	<form name="frm1" action="../IdCheckCtrl" method="post" id="" class="frm1" onsubmit="return invalidCheck(this)">
+		<label for="cusId">아이디</label>
 		<input type="text" id= "cusId" name="cusId" placeholder="4글자 이상 문자 또는 숫자 입력" class="form-control" autofocus required/>
 		<input type="submit" class="form-control" value="중복확인">
 	</form>

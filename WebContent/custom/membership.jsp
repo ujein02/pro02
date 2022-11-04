@@ -6,12 +6,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>공지사항 등록</title>
+<title>이용약관</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../common.css">
 <style>
 .title { padding-top:36px; padding-bottom:20px; }
+.agree_fr { width: 900px; white-space:pre-wrap; margin: 10px auto; 
+padding: 24px; border:2px solid #eee; height:600px; overflow-y:auto; }
 </style>
 </head>
 <body>
@@ -19,7 +22,7 @@
 
 <div class="content container">
 	<h2 class="title">이용약관</h2>
-	<article class="agree fr">
+	<article class="agree_fr">
 	제1장 총칙
 
 제1조(목적) 이 약관은 회사가 온라인으로 제공하는 디지털콘텐츠(이하 "콘텐츠"라고 한다) 및 제반서비스의 이용과 관련하여 회사와 이용자와의 권리, 의무 및 책임사항 등을 규정함을 목적으로 합니다. 
@@ -338,5 +341,6 @@
 	</script>
 	
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

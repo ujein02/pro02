@@ -11,6 +11,7 @@
 <script src='https://unpkg.com/jquery@3/dist/jquery.min.js'></script>
 <script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 <script src='https://unpkg.com/bootstrap@4/dist/js/bootstrap.min.js'></script>
+<link rel="stylesheet" href="common.css">
 <style>
 .title { padding-top:36px; padding-bottom:20px; }
 </style>
@@ -46,5 +47,6 @@
 		<a href="./notice/insertBoard.jsp" class="btn btn-secondary">글 작성</a>
 	</div>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>
