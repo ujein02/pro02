@@ -25,11 +25,11 @@
 		          OUTDOOR
 		        </a>
 		        <div class="dropdown-menu">
-		          <a class="dropdown-item" href="#">SHOES</a>
+		          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=1">SHOES</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">CAMPING</a>
+		          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=2">GEAR</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">WEAR</a>
+		          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=3">WEAR</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown">

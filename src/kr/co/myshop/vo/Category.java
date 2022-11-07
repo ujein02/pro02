@@ -1,14 +1,14 @@
 package kr.co.myshop.vo;
 //상품 카테고리 클래스
 public class Category {
-	private int cateNO;
+	private int cateNo;
 	private String cateName;
 	
-	public int getCateNO() {
-		return cateNO;
+	public int getCateNo() {
+		return cateNo;
 	}
-	public void setCateNO(int cateNO) {
-		this.cateNO = cateNO;
+	public void setCateNo(int cateNo) {
+		this.cateNo = cateNo;
 	}
 	public String getCateName() {
 		return cateName;

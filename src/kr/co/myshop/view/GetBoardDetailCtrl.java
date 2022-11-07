@@ -33,6 +33,8 @@ public class GetBoardDetailCtrl extends HttpServlet {
 			Class.forName(DRIVER);
 			String sql = "select * from notice where notino=? ";
 			Connection con = DriverManager.getConnection(URL,USER,PASS);
+			
+			con.setAutoCommit(false); 	//트랜잭션 처리시에는 같이 처리될 수 있도록 오토커밋을 꺼야함
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, notiNo);
 			ResultSet rs = pstmt.executeQuery();
@@ -41,6 +43,12 @@ public class GetBoardDetailCtrl extends HttpServlet {
 			Notice vo = new Notice();
 			
 			if(rs.next()){
+				sql = "update notice set visited=visited+1 where notino=? ";
+				pstmt = con.prepareStatement(sql);
+				pstmt.setInt(1, notiNo);
+				pstmt.executeUpdate();
+				con.commit();
+				con.setAutoCommit(true);
 				vo.setNotiNo(rs.getInt("notino"));
 				vo.setTitle(rs.getString("title"));
 				vo.setContent(rs.getString("content"));

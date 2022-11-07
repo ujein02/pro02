@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>로그인</title>
+<title>회원관리</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -26,7 +26,7 @@
 <div class="row" id="content_row">
     <%@ include file="admin_sidebar.jsp" %>
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-		<h2 class="title">공지사항 목록</h2>
+		<h2 class="title">회원관리</h2>
 		<table class="table">
 			<thead>
 				<tr>
