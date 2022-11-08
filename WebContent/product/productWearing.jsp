@@ -28,7 +28,7 @@
 			<tbody>
 				<tr>
 					<th>제품이미지</th>
-					<td><img src="<%=request.getContextPath() %>/upload/<%=vo.getProPic() %>" alt="<%=vo.getProName() %>"></td>
+					<td><img src="<%=request.getContextPath() %>/upload/<%=vo.getProPic2() %>" alt="<%=vo.getProName() %>"></td>
 				</tr>
 				<tr>
 					<th>제품번호</th>

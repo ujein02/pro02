@@ -43,12 +43,13 @@ public class GetBoardDetailCtrl extends HttpServlet {
 			Notice vo = new Notice();
 			
 			if(rs.next()){
+				//해당 글이 있는 경우에만 읽은 횟수를 1씩 증가 시킴
 				sql = "update notice set visited=visited+1 where notino=? ";
 				pstmt = con.prepareStatement(sql);
 				pstmt.setInt(1, notiNo);
 				pstmt.executeUpdate();
-				con.commit();
-				con.setAutoCommit(true);
+				con.commit(); //지금까지 진행했던 내용들이 모두 같이 성공수행될수 있도록 수동커밋을 함
+				con.setAutoCommit(true); //다음 sql 실행 구문을 위해 다시 오토커밋을 켜놓음
 				vo.setNotiNo(rs.getInt("notino"));
 				vo.setTitle(rs.getString("title"));
 				vo.setContent(rs.getString("content"));

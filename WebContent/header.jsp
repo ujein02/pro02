@@ -17,9 +17,6 @@
 		      <li class="nav-item active">
 		        <a class="nav-link" href="#">KOLON SPORT<span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">ISSUE</a>
-		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
 		          OUTDOOR
@@ -31,6 +28,9 @@
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=3">WEAR</a>
 		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">ISSUE</a>
 		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
@@ -44,32 +44,36 @@
 		      </li>
 		    </ul>
 		    <ul class="nav justify-content-end">
-			  <% if(sid!=null) { %>
-				  <li class="nav-item">
-				    <span class="nav-link"><%=sname %>님</span>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link active" href="<%=request.getContextPath() %>/LogOutCtrl">로그아웃</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="<%=request.getContextPath() %>/GetCustomInfoCtrl">회원정보</a>
-				  </li>
-				  <% if(sid.equals("admin")) { %>
-					  <li class="nav-item">
-					    <a class="nav-link" href="<%=request.getContextPath() %>/admin/index.jsp">관리자 페이지로</a>
-					  </li>
-				  <% } %>
+		  <% if(sid!=null) { %>
+			  <li class="nav-item">
+			    <span class="nav-link"><%=sname %>님</span>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link active" href="<%=request.getContextPath() %>/LogOutCtrl">로그아웃</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="<%=request.getContextPath() %>/GetCustomInfoCtrl">회원정보</a>
+			  </li>
+			  <% if(sid.equals("admin")) { %>
+			  <li class="nav-item">
+			    <a class="nav-link" href="<%=request.getContextPath() %>/admin/index.jsp">관리자 페이지로</a>
+			  </li>
 			  <% } else { %>
-				  <li class="nav-item">
-				    <a class="nav-link active" href="<%=request.getContextPath() %>/custom/login.jsp">로그인</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="<%=request.getContextPath() %>/custom/membership.jsp">회원가입</a>
-				  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="<%=request.getContextPath() %>/GetMemberSalesInfoCtrl">구매내역</a>
+			  </li>
 			  <% } %>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Contact</a>
-				  </li>
+		  <% } else { %>
+			  <li class="nav-item">
+			    <a class="nav-link active" href="<%=request.getContextPath() %>/custom/login.jsp">로그인</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="<%=request.getContextPath() %>/custom/membership.jsp">회원가입</a>
+			  </li>
+		  <% } %>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Contact</a>
+			  </li>
 			</ul>	    
 		  </div>
 		 </div>

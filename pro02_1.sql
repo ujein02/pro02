@@ -74,3 +74,15 @@ create table parsel(
     parselTel varchar(14),
     parselState int default 0
 );    
+
+-- 결제 테이블 생성
+create table payment(
+	salePayNo int primary key auto_increment,
+    payMethod varchar(20),
+    payCom varchar(50),
+    cardNum varchar(40),
+    payAmount int
+);
+
+commit;
+

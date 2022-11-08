@@ -5,9 +5,10 @@ public class Sales {
 	private String cusId;		//고객아이디
 	private String proNo;		//제품번호
 	private int amount;			//판매수량
-	private String saleDate;	//판매일
-	private int parselNo;		//배송번호
-	private int salePayNo;		//결제변호
+	private String saleDate;	//(default)판매일
+	private int parselNo;		//(*parsel)배송코드
+	private int salePayNo;		//(*payment)결제번호
+	private int parselState;
 	
 	public int getSaleNo() {
 		return saleNo;
@@ -50,6 +51,12 @@ public class Sales {
 	}
 	public void setSalePayNo(int salePayNo) {
 		this.salePayNo = salePayNo;
+	}
+	public int getParselState() {
+		return parselState;
+	}
+	public void setParselState(int parselState) {
+		this.parselState = parselState;
 	}
 	
 	
