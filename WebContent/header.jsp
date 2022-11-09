@@ -7,7 +7,7 @@
  
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
 		<div class="in_container">
-		  <a class="navbar-brand"  id="logo" href="./index.jsp" >KOLON SPORT</a>
+		  <a class="navbar-brand"  id="logo" href="<%=request.getContextPath() %>/index.jsp" >KOLON SPORT</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -15,7 +15,7 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">KOLON SPORT<span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="<%=request.getContextPath() %>/index.jsp">KOLON SPORT<span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -61,6 +61,9 @@
 			  <% } else { %>
 			  <li class="nav-item">
 			    <a class="nav-link" href="<%=request.getContextPath() %>/GetMemberSalesInfoCtrl">구매내역</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="<%=request.getContextPath() %>/GetMemberCartListCtrl">장바구니</a>
 			  </li>
 			  <% } %>
 		  <% } else { %>

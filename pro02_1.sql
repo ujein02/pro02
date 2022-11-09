@@ -85,4 +85,25 @@ create table payment(
 );
 
 commit;
+select * from parsel order by parselstate asc, parselno asc;
+select * from parsel;
+select * from parsel order by parselstate asc, parselno asc ;
 
+alter table parsel add column baleCode varchar(24);
+
+create table cart(
+	cartNo int primary key auto_increment,
+    proNo int,
+    cusId varchar(13)
+);
+create table qnaa(
+    no int primary key auto_increment,
+    title varchar(100) not null,
+    content varchar(1000) not null,
+    author varchar(20) not null,
+    resdate datetime default now(),
+    lev int default 0,            -- 깊이
+    parno int not null,          -- 부모글 번호
+    sec char(1)                     -- 비밀글 여부
+    
+);

@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>구매 상세 내역 페이지</title>
+<title>판매 상세 내역 페이지</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -32,23 +32,23 @@
 		<% } else { %>
 		<main class="content container">
 		<% } %>
-			<h2 class="title">구매 상세 내역</h2>
+			<h2 class="title">판매 상세 내역</h2>
 			<table class="table">
 				<tbody>
 					<tr>
-						<th>구매 번호</th>
+						<th>판매 번호</th>
 						<td><%=vo.getSaleNo() %></td>
 					</tr>
 					<tr>
-						<th>구매 제품 번호</th>
+						<th>판매 제품 번호</th>
 						<td><%=vo.getProNo() %></td>
 					</tr>
 					<tr>
-						<th>구매 수량</th>
+						<th>판매 수량</th>
 						<td><%=vo.getAmount() %></td>
 					</tr>
 					<tr>
-						<th>구매일</th>
+						<th>판매일</th>
 						<td><%=vo.getSaleDate() %></td>
 					</tr>
 					<tr>
