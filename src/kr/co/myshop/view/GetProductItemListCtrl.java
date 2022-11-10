@@ -54,7 +54,7 @@ public class GetProductItemListCtrl extends HttpServlet {
 			}
 			request.setAttribute("proList", proList);
 			
-			//notice/boardList.jsp 에 포워딩
+			//product/productList.jsp 에 포워딩
 			RequestDispatcher view = request.getRequestDispatcher("./product/productList.jsp");
 			view.forward(request, response);
 			

@@ -107,3 +107,5 @@ create table qnaa(
     sec char(1)                     -- 비밀글 여부
     
 );
+
+select * from category;

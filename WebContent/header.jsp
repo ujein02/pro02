@@ -74,9 +74,7 @@
 			    <a class="nav-link" href="<%=request.getContextPath() %>/custom/membership.jsp">회원가입</a>
 			  </li>
 		  <% } %>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">Contact</a>
-			  </li>
+			  
 			</ul>	    
 		  </div>
 		 </div>

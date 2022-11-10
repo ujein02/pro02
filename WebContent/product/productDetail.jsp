@@ -75,6 +75,7 @@
 		<% } %>
 		<% if(vo.getAmount()!=0) { %>
 		<a href="<%=request.getContextPath() %>/GetSalesProductCtrl?proNo=<%=vo.getProNo() %>" class="btn btn-primary">제품 구매</a>
+		<a href="<%=request.getContextPath() %>/InsertCartCtrl?proNo=<%=vo.getProNo() %>" class="btn btn-primary">장바구니 넣기</a>
 		<% } %>
 	</div>
 </div>
