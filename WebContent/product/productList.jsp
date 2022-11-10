@@ -13,14 +13,16 @@
 <link rel="stylesheet" href="common.css">
 <style>
 .title { padding-top:36px; padding-bottom:20px; }
-</style>
-<style>
 .in_container { clear:both; width:1400px; margin:0 auto; }
 .in_container:after { content:""; display:block; clear:both; }
 .card-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .card-text {   overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;
   -webkit-line-clamp: 2;  -webkit-box-orient: vertical; }
+#best li { margin-bottom:24px; }  
+.breadcrumb-item+.breadcrumb-item::before { float:left; }
+#cateNo { display:block; width:120px; float:left; }
 </style>
+
 </head>
 <body>
 <%@ include file="../header.jsp" %>

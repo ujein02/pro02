@@ -32,15 +32,8 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">ISSUE</a>
 		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
-		          Community
-		        </a>
-		        <div class="dropdown-menu">
-		          <a class="dropdown-item" href="<%=request.getContextPath() %>/GetBoardListCtrl">Notice</a>
-		          <a class="dropdown-item" href="#">FAQ</a>
-		          <a class="dropdown-item" href="#">Q&A</a>
-		        </div>
+		      <li class="nav-item">
+		        <a class="nav-link" href="<%=request.getContextPath() %>/GetBoardListCtrl">Notice</a>
 		      </li>
 		    </ul>
 		    <ul class="nav justify-content-end">

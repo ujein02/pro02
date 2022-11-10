@@ -27,7 +27,7 @@ public class FileUpload extends HttpServlet {
        
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 				//String uploadPath = "D:\\kim6\\pro01\\pro02\\WebContent\\upload"; request.getRealPath("/upload");
-		   String uploadPath = "D:\\kje\\pro01\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\pro02\\upload";
+		   String uploadPath = request.getRealPath("/upload");
 		   
 		   System.out.println(uploadPath);
 		   int size = 10*1024*1024;
